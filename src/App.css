@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inbody-report {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.inbody-report h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.user-info,
+.body-composition,
+.segmental-analysis {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-info table,
+.body-composition table,
+.segmental-analysis table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-info table th,
+.body-composition table th,
+.segmental-analysis table th,
+.user-info table td,
+.body-composition table td,
+.segmental-analysis table td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-info table th,
+.body-composition table th,
+.segmental-analysis table th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.segmental-analysis table thead {
+  background-color: #f2f2f2;
+}
+
+.segmental-analysis table th:first-child,
+.segmental-analysis table td:first-child {
+  text-align: center;
+}
+
+.segmental-analysis table th:last-child,
+.segmental-analysis table td:last-child {
+  text-align: right;
+}
+
+.history-graph {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.history-graph h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.graph-container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inbody-report-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inbody-report-left {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .inbody-report-container {
+    grid-template-columns: 1fr;
   }
 }
