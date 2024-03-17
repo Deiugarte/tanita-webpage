@@ -26,14 +26,14 @@ const SegmentalAnalysis = ({id}) => {
           <tr>
             <th>Segment</th>
             <th>Fat Mass (%)</th>
-            <th>Lean Body Mass (%)</th>
+            <th>Lean Body Mass (kg)</th>
           </tr>
         </thead>
         <tbody>
           {segmentData.map((item, index) => (
             <tr key={index}>
               <td>{item.segment}</td>
-              <td>{item.fatMass || 'N/A'} kg</td>
+              <td>{item.fatMass || 'N/A'} %</td>
               <td>{item.leanBodyMass || 'N/A'} kg</td>
             </tr>
           ))}

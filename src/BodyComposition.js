@@ -29,7 +29,7 @@ const BodyComposition = ({id}) => {
           </tr>
           <tr>
             <td>Muscle Body Mass:</td>
-            <td>{bodyCompositionData.globalMuscle || 'N/A'} %</td>
+            <td>{bodyCompositionData.globalMuscle || 'N/A'} kg</td>
           </tr>
           <tr>
             <td>Body Mass Index:</td>
