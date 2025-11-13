@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![codecov](https://codecov.io/gh/Deiugarte/tanita-webpage/branch/main/graph/badge.svg)](https://codecov.io/gh/Deiugarte/tanita-webpage)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -18,6 +20,13 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run test:coverage`
+
+Runs the test suite with code coverage reporting. Coverage reports are generated in the `coverage/` directory and include:
+- A detailed HTML report (coverage/lcov-report/index.html)
+- Coverage statistics for all source files
+- Line, branch, function, and statement coverage metrics
 
 ### `npm run build`
 
