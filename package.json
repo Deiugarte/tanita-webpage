@@ -39,6 +39,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "jest-canvas-mock": "^2.5.2"
+    "jest-canvas-mock": "^2.5.8"
   }
 }
